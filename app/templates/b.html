@@ -12,9 +12,51 @@
 
 		<script src="{% static '/vendors/jquery/jquery-3.3.1.min.js' %}"></script>
 		<script src="{% static '/vendors/jquery-ui/jquery-ui.min.js' %}"></script>
+    
+    <style>
+      html {
+        height: 100%;
+      }
+         body {
+        background-color: purple;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+      }
+      .flex-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+      .row-container {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: row;
+        margin: 10px;
+      }
+      .box {
+        background-color: orange; 
+        width: 200px;
+        height: 150px;
+        margin: 10px; 
+      }
+    </style>
 	</head>
 	<body>
-		<!-- Your layout here -->
-
+		<div class="flex-container">
+          <div class="row-container">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+          </div>
+          <div class="row-container">
+            <div class="box"></div>
+          </div>
+    </div>
 	</body>
 </html>
